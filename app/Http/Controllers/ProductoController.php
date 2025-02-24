@@ -1,4 +1,4 @@
-u<?php
+<?php
 
 namespace App\Http\Controllers;
 
@@ -28,6 +28,6 @@ class ProductoController extends Controller
 
     public function guardarProducto()
     {
-        return view('guadarProductos');
+        return view('guardarProductos');
     }
 }

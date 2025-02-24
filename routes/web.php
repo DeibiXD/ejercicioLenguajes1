@@ -5,9 +5,10 @@ use Illuminate\Support\Facades\Route;
 
     Route::get('/', function () {
         return view('welcome');
+    });
 
     Route::get('/productos', [ProductoController::class,'verProductos'])->name('verProductos');
 
-    Route::get('/productos/guardar', [ProductoController::class,'guardarProducto'])->name('guardarProducto');
+    Route::get('/productos/guardar', [ProductoController::class,'guardarProducto'])->name('guardarProductos');
 
-    Route::post('/productos/almacenar',[ProductoControllerController::class, 'almacenarProducto'])->name('almacenarProducto');
+    Route::post('/productos/almacenar', [ProductoController::class, 'almacenarProducto'])->name('almacenarProducto');
