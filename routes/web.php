@@ -14,4 +14,11 @@ use Illuminate\Support\Facades\Route;
 
     Route::post('/productos/almacenar', [ProductoController::class, 'almacenarProducto'])->name('almacenarProducto');
 
-    Route::get('/ventas',[VentaController::class,'verVentas'])->name('verVentas');
+    Route::get('/ventas', [VentaController::class,'verVentas'])->name('verVentas');
+
+    Route::get('/ventas/crear', [VentaController::class,'crearVenta'])->name('crearVenta');
+
+    Route::post('/ventas/almacenar', [VentaController::class, 'almacenarVenta'])->name('almacenarVenta');
+
+
+

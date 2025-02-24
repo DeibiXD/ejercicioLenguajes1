@@ -33,6 +33,7 @@
                     <th>Codigo Producto</th>
                     <th>Cantidad</th>
                     <th>SubTotal</th>
+                    <th>ISV</th>
                     <th>Total</th>
                     <th>Acciones</th>
                 </tr>
@@ -45,6 +46,7 @@
                     <td>{{$venta->codigoProducto}}</td>
                     <td>{{$venta->cantidad}}</td>
                     <td>{{$venta->subtotal}}</td>
+                    <td>{{ $venta->ISV }}</td>
                     <td>{{$venta->total}}</td>
                     <td class="action-buttons">
                         <a href="" class="btn btn-primary btn-sm">
